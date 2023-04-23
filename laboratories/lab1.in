@@ -1,0 +1,26 @@
+#
+# comment lines (skip)
+#dfa - accept all strings such that #1 mod 3 = 0
+Sigma
+0
+1
+End
+States
+q0
+S
+q1
+q2
+q3
+F
+End
+Transitions
+q0, 0, q0
+q0, 1, q1
+q1, 0, q1
+q1, 1, q2
+q2, 0, q2
+q2, 1, q3
+q3, 0, q3
+q3, 1, q1
+End
+# pentru orice simbol am o tranzitie, starea initiala si multimea starilor finale pentru optimizare
